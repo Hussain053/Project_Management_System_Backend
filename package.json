@@ -1,0 +1,21 @@
+{
+  "name": "backend-project",
+  "version": "1.0.0",
+  "description": "A Backend Project For Project Management",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "node index.js"
+  },
+  "keywords": [
+    "Backend",
+    "API",
+    "Project",
+    "Management"
+  ],
+  "author": "Hussain Patanwala",
+  "license": "ISC",
+  "devDependencies": {
+    "prettier": "3.9.6"
+  }
+}
