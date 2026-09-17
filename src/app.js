@@ -3,8 +3,7 @@ import cookieParser from "cookie-parser";
 import cors from "cors";
 const app = express();
 import healthcheckRouter from "./routes/healthcheck.routes.js";
-
-app.use("/api/v1/healthcheck", healthcheckRouter);
+import authRouter from "./routes/auth.routes.js";
 
 // basic configurations
 app.use(express.json({ limit: "16kb" }));
@@ -23,6 +22,9 @@ app.use(
 );
 
 // routes
+app.use("/api/v1/auth", authRouter);
+app.use("/api/v1/healthcheck", healthcheckRouter);
+
 app.get('/', (req, res) => {
   res.send('Hello World!')
 })
