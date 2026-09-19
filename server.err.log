@@ -1,0 +1,7 @@
+❌ MongoDB connection error Error: querySrv ETIMEOUT _mongodb._tcp.cluster0.aaidi5g.mongodb.net
+    at QueryReqWrap.onresolve [as oncomplete] (node:internal/dns/promises:294:17) {
+  errno: undefined,
+  code: 'ETIMEOUT',
+  syscall: 'querySrv',
+  hostname: '_mongodb._tcp.cluster0.aaidi5g.mongodb.net'
+}

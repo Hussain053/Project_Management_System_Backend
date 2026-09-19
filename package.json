@@ -26,9 +26,11 @@
     "crypto": "^1.0.1",
     "dotenv": "^17.4.2",
     "express": "^5.2.1",
+    "express-validator": "^7.3.2",
     "jsonwebtoken": "^9.0.3",
     "mailgen": "^2.0.36",
     "mongoose": "^9.9.4",
-    "nodemailer": "^10.0.10"
+    "nodemailer": "^10.0.10",
+    "validator": "^13.15.35"
   }
 }

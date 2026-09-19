@@ -32,4 +32,16 @@ app.get('/', (req, res) => {
 app.get('/instagram', (req, res) => {
   res.send('Hello World! from instagram but from app.js')
 })
+
+app.use((err, req, res, next) => {
+  const statusCode = err.statusCode || 500;
+  res.status(statusCode).json({
+    statusCode,
+    data: err.data || null,
+    message: err.message || "Internal server error",
+    success: false,
+    errors: err.errors || [],
+  });
+});
+
 export default app;
